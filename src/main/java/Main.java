@@ -24,7 +24,7 @@ public class Main {
                 .build();
         // Получение объекта ответа от сервера
         Response response = client.newCall(request).execute();
-
+ 
         System.out.println(response.code());
         // Тело сообщения возвращается методом body объекта Response
         String body = response.body().string();
